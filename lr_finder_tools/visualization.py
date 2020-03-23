@@ -81,11 +81,11 @@ def plot_lrrt_curves(c, bins, lrs_res, all_losses_res):
     gap = losses_m[0] - np.min(losses_m)
     plt.ylim(bottom=np.min(losses_m) - 0.25 * gap, top=losses_m[0] + 0.25 * gap)
     plt.xlim(left=1e-7, right=100)
-    plt.xlabel("Learning Rate")
-    plt.ylabel("Loss")
+    plt.xlabel("Learning Rate", fontsize=18)
+    plt.ylabel("Loss", fontsize=18)
     plt.xscale('log')
     plt.grid("on")
-    plt.title(f"Minimum of loss in [{bins[c-1]}, {bins[c]}]")
+    plt.title(f"Minimum of loss in [{bins[c-1]}, {bins[c]}]", fontsize=20)
     
     
 def plot_lrrt_curves_by_max_lr(lrs_res, all_losses_res, all_max_lr_res):
