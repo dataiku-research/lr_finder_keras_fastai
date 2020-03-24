@@ -13,6 +13,12 @@ This repository contains experiments comparing the keras and fastai implementati
         * Multiple runs with same initial weights
         * Multiple runs with random initial weights
 
+The following experiments are not included in the notebooks but can be obtained from the author upon request:
+* keras:
+    * Learning Rate Finder with different smoothing of the training loss
+    * Learning Rate Finder using both training and validation losses
+    * Learning Rate Finder with different batch sizes 
+
 ### Prerequisites
 
 See `requirements.txt`.
